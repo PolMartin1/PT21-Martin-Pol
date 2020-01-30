@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimary"
+        app:title="@string/app_name"
+        app:menu="@menu/menu_main"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="50dp">
+
+        <ImageButton
+            android:id="@+id/imbtpingpong"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/pingpong_selector"
+            />
+
+        <ImageButton
+            android:id="@+id/imbtrellotge"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/reloj_selector"
+            />
+
+        <ImageButton
+            android:id="@+id/imbtporc"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/cerdo_selector"
+            />
+
+        <ImageButton
+            android:id="@+id/imbtcrit"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/grito_selector"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <Button
+        android:id="@+id/btnStart_Recording"
+        android:text="Start recording"
+        android:layout_width="110dp"
+        android:layout_height="70dp"/>
+
+        <Button
+            android:id="@+id/btnStop_Recording"
+            android:text="Stop recording"
+            android:layout_marginLeft="70dp"
+            android:layout_width="110dp"
+            android:layout_height="70dp"/>
+
+        <Button
+            android:id="@+id/btnShow_Recordings"
+            android:text="Show recordings"
+            android:layout_marginLeft="10dp"
+            android:layout_width="110dp"
+            android:layout_height="70dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
